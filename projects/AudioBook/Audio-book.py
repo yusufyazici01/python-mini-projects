@@ -16,10 +16,10 @@ textList = []
 #Extracting text data from each page of the pdf file
 for i in range(count):
    try:
-    page = pdf_Reader.getPage(i)    
-    textList.append(page.extractText())
+      page = pdf_Reader.getPage(i)    
+      textList.append(page.extractText())
    except:
-       pass
+      pass
 
 #Converting multiline text to single line text
 textString = " ".join(textList)
